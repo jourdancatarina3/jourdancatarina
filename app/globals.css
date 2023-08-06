@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b md:px-4 lg:px-6 py-4 border-[#242424] text-white placeholder-gray-500 transition-all focus:border-white focus:text-white hover:border-white
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +22,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +35,49 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  text-shadow: 
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #e60073,
+    0 0 40px #e60073,
+    0 0 50px #e60073,
+    0 0 60px #e60073,
+    0 0 70px #e60073,
+    0 0 80px #ff4da6; /* Tailwind doesn't support infinite animations like in the original CSS */
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+}
+
+.neon-glow {
+  animation: glowing 2s infinite;
+  background: linear-gradient(45deg, #ff00f0, #00ffcc);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
