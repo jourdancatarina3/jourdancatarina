@@ -78,7 +78,7 @@ export default function Home() {
             <div className='w-full md:w-2/3 lg:w-1/2'>
               <div className='flex flex-col'>
                 <h1 className='text-center lg:text-start text-5xl lg:text-7xl  font-bold'>Turning Ideas And Designs Into Reality.</h1>
-                <p className=' text-center lg:text-start text-lg lg:text-xl mt-4 lg:mt-8'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
+                <p className=' text-center lg:text-start text-lg lg:text-xl mt-4 lg:mt-8'>As a dedicated full-stack developer, my objective revolves around constructing web applications from initial designs and imaginative concepts. Explore my recent projects showcasing my abilities and proficiency in React.js and web development.</p>
                 <div className='mt-5 flex flex-wrap justify-center lg:justify-start'>
                   <button onClick={handleDownload}>
                   <motion.div

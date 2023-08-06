@@ -38,7 +38,7 @@ function Section({ children }) {
 const ContactMe = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        window.location.href = `mailto:jdcatarina@up.edu.ph?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message}`
+        window.location.href = `mailto:jourdancatarina3@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message}`
     };
 
     return (
@@ -49,7 +49,7 @@ const ContactMe = () => {
                 </h1>
             </Section>
 
-
+            <div className='lg:w-full w-10/12 flex justify-center'>
             <div className='mt-10 flex flex-col'>
                 <Section>
                     <h1 className=' font-semibold text-3xl'>
@@ -89,6 +89,7 @@ const ContactMe = () => {
                         <button type='submit' className='neon-glow py-5 px-10 rounded-md text-white font-bold text-lg'>Submit</button>
                     </form>
                 </Section>
+            </div>
             </div>
         </div>
     )
