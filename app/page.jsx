@@ -30,8 +30,7 @@ function Section({ children }) {
           scale: 1
         }}
         transition={{
-          type: "spring",
-          duration: 2.0,
+          duration: 1,
         }}
       >
         {children}

@@ -22,8 +22,7 @@ function Section({ children }) {
                     scale: 1
                 }}
                 transition={{
-                    type: "spring",
-                    duration: 3,
+                    duration: 1.5,
                 }}
             >
                 {children}

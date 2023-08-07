@@ -26,8 +26,7 @@ function Section({ children }) {
                     scale: 1
                 }}
                 transition={{
-                    type: "spring",
-                    duration: 3,
+                    duration: 1.5,
                 }}
             >
                 {children}
@@ -205,7 +204,7 @@ const Projects = () => {
                             opacity: isInView ? 1 : 0,
                         }}
                         transition={{
-                            duration: 2,
+                            duration: 1,
                         }}
                     >
                         <h1 ref={ref} className='lg:text-5xl mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1>
@@ -225,8 +224,7 @@ const Projects = () => {
                                 scale: 1
                             }}
                             transition={{
-                                type: "spring",
-                                duration: 2.5,
+                                duration: 1,
                             }}
                         >
                             <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
@@ -269,8 +267,7 @@ const Projects = () => {
                                 scale: 1
                             }}
                             transition={{
-                                type: "spring",
-                                duration: 2.5,
+                                duration: 1,
                             }}
                         >
                             <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
