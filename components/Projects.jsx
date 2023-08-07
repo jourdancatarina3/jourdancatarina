@@ -26,7 +26,7 @@ function Section({ children }) {
                     scale: 1
                 }}
                 transition={{
-                    duration: 1.5,
+                    duration: 1,
                 }}
             >
                 {children}
