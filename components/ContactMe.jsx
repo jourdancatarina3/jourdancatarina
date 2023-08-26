@@ -2,10 +2,6 @@
 
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { useRef } from "react";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

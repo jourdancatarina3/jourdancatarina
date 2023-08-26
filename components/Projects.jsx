@@ -1,11 +1,7 @@
 import React from 'react';
-import { useRef } from "react";
 import Image from 'next/image';
 import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import Link from 'next/link';
 
 const Projects = () => {

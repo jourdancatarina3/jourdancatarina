@@ -1,9 +1,6 @@
 import React from 'react'
 import { useRef } from "react";
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-
 const About = () => {
     return (
         <div id='about'>

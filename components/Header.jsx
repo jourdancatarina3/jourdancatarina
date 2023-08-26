@@ -6,8 +6,6 @@ import { Fragment } from 'react';
 
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 
 const Header = ({ styleAbout, styleProjects, styleContact }) => {
   return (

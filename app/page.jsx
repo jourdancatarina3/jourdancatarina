@@ -8,8 +8,6 @@ import Image from 'next/image';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContactMe from '@/components/ContactMe';
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import Link from "next/link";
 
 export default function Home() {
