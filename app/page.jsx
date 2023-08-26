@@ -12,33 +12,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import Link from "next/link";
 
-function Section({ children }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  return (
-    <section ref={ref}>
-      <motion.div
-        initial={{
-          y: 500,
-          opacity: 0,
-          scale: 1,
-        }}
-        animate={{
-          y: isInView ? 0 : 500,
-          opacity: isInView ? 1 : 0,
-          scale: 1
-        }}
-        transition={{
-          duration: 1,
-        }}
-      >
-        {children}
-      </motion.div>
-    </section>
-  );
-}
-
 export default function Home() {
   const handleDownload = () => {
     const pdfUrl = '/JourdanCatarinaResume.pdf';
@@ -53,73 +26,33 @@ export default function Home() {
     <main className='bg-fixed w-full bg-cover bg-center min-h-screen' style={{ backgroundImage: "url('/homepage-bg.jpg')" }}>
       <div className="relative flex flex-col h-full w-full overflow-x-hidden max-w-7xl m-auto">
         <Header />
-
-        <motion.div
-          initial={{
-            x: 0,
-            opacity: 0,
-            scale: 0,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1
-          }}
-          transition={{
-            type: "spring",
-            duration: 1.3,
-          }}
-        >
           <div className='w-full flex lg:flex-row md:flex-row flex-col px-5 lg:px-10 xl:px-20 items-center justify-center lg:justify-between'>
             <div className="w-5/6 md:w-1/3 lg:w-1/2">
               <Image src="/profile.png" width={396.75} height={561.25} />
             </div>
             <div className='w-full md:w-2/3 lg:w-1/2'>
               <div className='flex flex-col'>
-                <h1 className='text-center lg:text-start text-5xl lg:text-7xl  font-bold'>Turning Ideas And Designs Into Reality.</h1>
+                <h1 className='text-center lg:text-start text-5xl lg:text-7xl font-bold'>Turning Ideas And Designs Into Reality.</h1>
                 <p className=' text-center lg:text-start text-lg lg:text-xl mt-4 lg:mt-8'>As a dedicated full-stack developer, my objective revolves around constructing web applications from initial designs and imaginative concepts. Explore my recent projects showcasing my abilities and proficiency in React.js and web development.</p>
                 <div className='mt-5 flex flex-wrap justify-center lg:justify-start'>
-                  <button onClick={handleDownload}>
-                  <motion.div
-                    className='bg-white flex items-center cursor-pointer border-white border-solid border-4 rounded-2xl py-px px-4 lg:px-6 lg:py-1.5 m-2 lg:m-0'
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
+                  <button className="bg-white flex items-center cursor-pointer border-white border-solid border-4 rounded-2xl py-px px-4 lg:px-6 lg:py-1.5 m-2 lg:m-0" onClick={handleDownload}>
                     <h1 className='text-indigo-950 text-2xl font-semibold'>
                       Resume
                     </h1>
                     <FontAwesomeIcon className='text-indigo-950 ml-2' icon={faArrowUpRightFromSquare} width={19} height={19} />
-                  </motion.div>
                   </button>
-
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
                     <Link href="https://github.com/jourdancatarina3" target="_blank" rel="noopener noreferrer">
                       <Image className='rounded-full cursor-pointer mx-5' src="/github.png" width={50} height={50} />
                     </Link>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
                     <Link href="https://www.linkedin.com/in/jourdan-catarina-606485241/" target="_blank" rel="noopener noreferrer">
                       <Image src="/linkedin-logo.png" className='cursor-pointer' width={50} height={50} />
                     </Link>
-                  </motion.div>
                 </div>
               </div>
             </div>
           </div>
-        </motion.div>
 
         <div className='h-16' />
-
-        <Section>
           <div className='w-full'>
             <div className='flex justify-center'>
               <div className='bg-white p-1.5 rounded-xl mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5'>
@@ -152,7 +85,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </Section>
+
         <div className='h-32' />
         <Projects />
 

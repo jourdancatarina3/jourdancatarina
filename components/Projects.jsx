@@ -8,45 +8,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import Link from 'next/link';
 
-function Section({ children }) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-
-    return (
-        <section ref={ref}>
-            <motion.div
-                initial={{
-                    y: 500,
-                    opacity: 0,
-                    scale: 1,
-                }}
-                animate={{
-                    y: isInView ? 0 : 500,
-                    opacity: isInView ? 1 : 0,
-                    scale: 1
-                }}
-                transition={{
-                    duration: 1,
-                }}
-            >
-                {children}
-            </motion.div>
-        </section>
-    );
-}
-
 const Projects = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    
     return (
         <div className="flex justify-center" id="projects">
             <div className='lg:w-10/12 w-11/12'>
-                <Section>
                     <h1 className='lg:text-8xl glow text-5xl text-center font-monoton tracking-widest '>Projects</h1>
-                </Section>
                 <div className='flex justify-center'>
                     <div className='flex flex-col'>
-                        <Section>
                             <div className='flex justify-center mt-10'>
                                 <div className='w-full md:w-3/4 lg:w-full relative'>
                                     <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
@@ -81,9 +50,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Section>
 
-                        <Section>
                             <div className='flex justify-center mt-20 lg:mt-36'>
                                 <div className='w-full md:w-3/4 lg:w-full relative'>
                                     <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
@@ -118,16 +85,12 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Section>
                     </div>
                 </div>
-
-                <Section>
-                    <h1 ref={ref} className='lg:hidden md:block block mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1>
-                </Section>
+                    {/* <h1 className='lg:hidden md:block block mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1> 
+                
                 <div className='flex justify-center'>
                     <div className='lg:hidden md:block block flex-col lg:flex-row'>
-                        <Section>
                             <div
                                 className="relative"
                             >
@@ -141,7 +104,7 @@ const Projects = () => {
                                             </Link>
                                         </div>
                                         <div className='w-full'>
-                                            <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" ref={ref} className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>Restaurant Site</Link>
+                                            <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>Restaurant Site</Link>
                                             <div className='flex items-center'>
                                                 <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
                                                 <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
@@ -158,9 +121,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Section>
                         <div className='h-10 lg:h-0 lg:w-10' />
-                        <Section>
                             <div
                                 className="lg:w-1/2 relative"
                             >
@@ -174,7 +135,7 @@ const Projects = () => {
                                             </Link>
                                         </div>
                                         <div className='w-full'>
-                                            <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" ref={ref} className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>GPT3 - OpenAI site</Link>
+                                            <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>GPT3 - OpenAI site</Link>
                                             <div className='flex items-center'>
                                                 <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
                                                 <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
@@ -191,42 +152,14 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Section>
                     </div>
-                </div>
+    </div> */}
 
-                <div className='hidden lg:block'>
-                    <motion.div
-                        initial={{
-                            opacity: 0,
-                        }}
-                        animate={{
-                            opacity: isInView ? 1 : 0,
-                        }}
-                        transition={{
-                            duration: 1,
-                        }}
-                    >
-                        <h1 ref={ref} className='lg:text-5xl mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1>
-                    </motion.div>
+                <div>
+                        <h1 className='lg:text-5xl mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1>
 
                     <div className='flex flex-col lg:flex-row'>
-                        <motion.div
-                            className="lg:w-1/2 relative"
-                            initial={{
-                                x: -500,
-                                opacity: 0,
-                                scale: 1,
-                            }}
-                            animate={{
-                                x: isInView ? 0 : -500,
-                                opacity: isInView ? 1 : 0,
-                                scale: 1
-                            }}
-                            transition={{
-                                duration: 1,
-                            }}
-                        >
+                        <div className='relative'>
                             <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
                             </div>
                             <div className='relative bg-white rounded-2xl w-full'>
@@ -237,7 +170,7 @@ const Projects = () => {
                                         </Link>
                                     </div>
                                     <div className='w-full'>
-                                        <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" ref={ref} className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>Restaurant Site</Link>
+                                        <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>Restaurant Site</Link>
                                         <div className='flex items-center'>
                                             <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
                                             <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
@@ -251,27 +184,12 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
-                        <div className='h-10 lg:h-0 lg:w-10' />
-
-                        <motion.div
-                            className="lg:w-1/2 relative"
-                            initial={{
-                                x: 500,
-                                opacity: 0,
-                                scale: 1,
-                            }}
-                            animate={{
-                                x: isInView ? 0 : 500,
-                                opacity: isInView ? 1 : 0,
-                                scale: 1
-                            }}
-                            transition={{
-                                duration: 1,
-                            }}
-                        >
-                            <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
                             </div>
+
+                            <div className='w-10 h-16' />
+
+                            <div className='relative'>
+                            <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'></div>
                             <div className='relative bg-white rounded-2xl w-full'>
                                 <div className='flex p-6 flex-col'>
                                     <div className='rounded-xl overflow-hidden cursor-pointer'>
@@ -280,7 +198,7 @@ const Projects = () => {
                                         </Link>
                                     </div>
                                     <div className='w-full'>
-                                        <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" ref={ref} className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>GPT3 - OpenAI site</Link>
+                                        <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>GPT3 - OpenAI site</Link>
                                         <div className='flex items-center'>
                                             <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
                                             <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
@@ -294,7 +212,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                            </div>
                     </div>
                 </div>
             </div>

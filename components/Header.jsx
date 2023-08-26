@@ -12,43 +12,19 @@ import { useInView } from "framer-motion";
 const Header = ({ styleAbout, styleProjects, styleContact }) => {
   return (
     <div className='glow flex justify-between py-8 px-10 z-10'>
-      <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
           <Link href="/" className='font-medium text-normal text-xl lg:text-2xl hover:cursor-pointer hover:underline underline-offset-4'>Jourdan Ken Catarina</Link>
-        </motion.div>
       <div className='hidden md:flex lg:flex'>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
           <Link href="#projects">
             <h1 className={`px-8 ${styleProjects} hover:underline underline-offset-4 font-medium text-xl lg:text-2xl hover:cursor-pointer`}>Projects</h1>
           </Link>
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
 
           <Link href="#about">
             <h1 className={`px-8 ${styleAbout} hover:underline underline-offset-4 font-medium text-xl lg:text-2xl hover:cursor-pointer`}>About</h1>
           </Link>
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
 
           <Link href="#contact">
             <h1 className={`px-8 ${styleContact} hover:underline underline-offset-4 font-medium text-xl lg:text-2xl hover:cursor-pointer`}>Contact</h1>
           </Link>
-        </motion.div>
       </div>
       <Menu as="div" className="lg:hidden md:hidden relative inline-block text-left">
         <div>
