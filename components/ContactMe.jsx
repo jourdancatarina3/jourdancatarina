@@ -12,7 +12,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div className='flex w-full justify-center'>
+        <div className='flex w-full justify-center mb-10'>
             <div id='contact' className='flex flex-col text-center md:text-left lg:flex-col max-w-7xl items-center'>
                     <h1 className='lg:text-8xl glow text-5xl text-center font-monoton tracking-widest '>
                         Contact

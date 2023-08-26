@@ -83,73 +83,6 @@ const Projects = () => {
                             </div>
                     </div>
                 </div>
-                    {/* <h1 className='lg:hidden md:block block mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1> 
-                
-                <div className='flex justify-center'>
-                    <div className='lg:hidden md:block block flex-col lg:flex-row'>
-                            <div
-                                className="relative"
-                            >
-                                <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
-                                </div>
-                                <div className='relative bg-white rounded-2xl w-full'>
-                                    <div className='flex p-3 md:p-6 flex-col'>
-                                        <div className='rounded-xl overflow-hidden cursor-pointer'>
-                                            <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                                <Image className='transform duration-300 hover:scale-105' src="/restaurant.png" width={495} height={270} />
-                                            </Link>
-                                        </div>
-                                        <div className='w-full'>
-                                            <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>Restaurant Site</Link>
-                                            <div className='flex items-center'>
-                                                <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
-                                                <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
-                                            </div>
-                                            <div className='flex mt-5 justify-between'>
-                                                <Link href="https://github.com/jourdancatarina3/restaurant-app" target="_blank" rel="noopener noreferrer">
-                                                    <Image className='bg-white rounded-full cursor-pointer' src="/github-logo.png" width={35} height={35} />
-                                                </Link>
-                                                <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-xl font-medium underline cursor-pointer' style={{ color: '#0a0141' }}>
-                                                    Visit Project
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <div className='h-10 lg:h-0 lg:w-10' />
-                            <div
-                                className="lg:w-1/2 relative"
-                            >
-                                <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
-                                </div>
-                                <div className='relative bg-white rounded-2xl w-full'>
-                                    <div className='flex p-3 md:p-6 flex-col'>
-                                        <div className='rounded-xl overflow-hidden cursor-pointer'>
-                                            <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                                <Image className='transform duration-300 hover:scale-105' src="/openai.png" width={495} height={270} />
-                                            </Link>
-                                        </div>
-                                        <div className='w-full'>
-                                            <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-4xl font-bold my-3 hover:underline cursor-pointer' style={{ color: '#0a0141' }}>GPT3 - OpenAI site</Link>
-                                            <div className='flex items-center'>
-                                                <FontAwesomeIcon className='mt-2' icon={faLayerGroup} width={23} height={23} style={{ color: '#0a0141' }} />
-                                                <h1 className='mt-2 mx-3 text-xl' style={{ color: '#0a0141' }}>REACT HTML CSS</h1>
-                                            </div>
-                                            <div className='flex mt-5 justify-between'>
-                                                <Link href="https://github.com/jourdancatarina3/gpt3-jrdn" target="_blank" rel="noopener noreferrer">
-                                                    <Image className='bg-white rounded-full cursor-pointer' src="/github-logo.png" width={35} height={35} />
-                                                </Link>
-                                                <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-xl font-medium underline cursor-pointer' style={{ color: '#0a0141' }}>
-                                                    Visit Project
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-    </div> */}
 
                 <div>
                         <h1 className='lg:text-5xl mt-20 lg:mt-28 mb-5 text-2xl text-center font-monoton tracking-widest '>Frontend-Only Projects</h1>
@@ -159,7 +92,7 @@ const Projects = () => {
                             <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'>
                             </div>
                             <div className='relative bg-white rounded-2xl w-full'>
-                                <div className='flex p-6 flex-col'>
+                                <div className='flex p-3 lg:p-6 flex-col'>
                                     <div className='rounded-xl overflow-hidden cursor-pointer'>
                                         <Link href="https://restaurant-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer">
                                             <Image className='transform duration-300 hover:scale-105' src="/restaurant.png" width={495} height={270} />
@@ -187,7 +120,7 @@ const Projects = () => {
                             <div className='relative'>
                             <div className='absolute -right-2.5 -bottom-2.5 neon-glow h-full w-full rounded-2xl'></div>
                             <div className='relative bg-white rounded-2xl w-full'>
-                                <div className='flex p-6 flex-col'>
+                                <div className='flex p-3 lg:p-6 flex-col'>
                                     <div className='rounded-xl overflow-hidden cursor-pointer'>
                                         <Link href="https://gpt3-jrdn.vercel.app/" target="_blank" rel="noopener noreferrer">
                                             <Image className='transform duration-300 hover:scale-105' src="/openai.png" width={495} height={270} />

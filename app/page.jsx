@@ -92,7 +92,6 @@ export default function Home() {
         <div className='h-32' />
 
         <ContactMe />
-        <div className='h-10' />
 
       </div>
     </main>
