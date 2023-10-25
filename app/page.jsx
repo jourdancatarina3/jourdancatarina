@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <main className='bg-fixed w-full bg-cover bg-center min-h-screen' style={{ backgroundImage: "url('/homepage-bg.jpg')" }}>
+    <main className='bg-fixed w-full bg-cover bg-center min-h-screen' style={{ backgroundColor: '#0a0141' }}>
       <div className="relative flex flex-col h-full w-full overflow-x-hidden max-w-7xl m-auto">
         <Header />
           <div className='w-full flex lg:flex-row md:flex-row flex-col px-5 lg:px-10 xl:px-20 items-center justify-center lg:justify-between'>
