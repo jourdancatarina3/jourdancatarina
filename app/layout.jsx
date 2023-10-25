@@ -1,3 +1,5 @@
+"use  client";
+
 import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -18,8 +20,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className='flex flex-col text-white'>
-        {children}
+      <body>
+        <div className='flex flex-col text-white' style={{ backgroundColor: '#0a0141' }}>
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )

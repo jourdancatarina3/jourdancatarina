@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = ({ styleAbout, styleProjects, styleContact }) => {
   return (
-    <div className='glow flex justify-between py-8 px-10 z-10'>
+    <div className='glow flex justify-between py-8 px-10 z-10 max-w-7xl m-auto w-full'>
           <Link href="/" className='font-medium text-normal text-xl lg:text-2xl hover:cursor-pointer hover:underline underline-offset-4'>Jourdan Ken Catarina</Link>
       <div className='hidden md:flex lg:flex'>
           <Link href="#projects">

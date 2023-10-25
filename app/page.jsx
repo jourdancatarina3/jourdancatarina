@@ -1,8 +1,6 @@
 "use client";
 
-import { useRef } from "react";
 import About from '@/components/About';
-import Header from '@/components/Header';
 import Projects from '@/components/Projects';
 import Image from 'next/image';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -21,12 +19,11 @@ export default function Home() {
   };
 
   return (
-    <main className='bg-fixed w-full bg-cover bg-center min-h-screen' style={{ backgroundColor: '#0a0141' }}>
+    <main className=''>
       <div className="relative flex flex-col h-full w-full overflow-x-hidden max-w-7xl m-auto">
-        <Header />
           <div className='w-full flex lg:flex-row md:flex-row flex-col px-5 lg:px-10 xl:px-20 items-center justify-center lg:justify-between'>
             <div className="w-5/6 md:w-1/3 lg:w-1/2">
-              <Image src="/profile.png" width={396.75} height={561.25} />
+              <Image src="/profile.svg" width={396.75} height={561.25} />
             </div>
             <div className='w-full md:w-2/3 lg:w-1/2'>
               <div className='flex flex-col'>
